@@ -13,18 +13,9 @@
         <h2>Table of contents</h2>
         <ul>
             <li><a href="./">Main Page</a></li>
-            <li><a href="./k1">Book 1</a></li>
-            <li><a href="./k2">Book 2</a></li>
-            <li><a href="./k3">Book 3</a></li>
-            <li><a href="./k4">Book 4</a></li>
-            <li><a href="./k5">Book 5</a></li>
-            <li><a href="./k6">Book 6</a></li>
-            <li><a href="./k7">Book 7</a></li>
-            <li><a href="./k8">Book 8</a></li>
-            <li><a href="./k9">Book 9</a></li>
-            <li><a href="./k10">Book 10</a></li>
-            <li><a href="./k11">Book 11</a></li>
-            <li><a href="./k12">Book 12</a></li>
+            {% for book in range(1,13) %}
+                <li><a href="".k{{book}}>Book {{}}</a></li>
+            {% endfor %}
         </ul>
 
     </section>
